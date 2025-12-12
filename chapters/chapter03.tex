@@ -1,0 +1,67 @@
+\chapter{Calculus and Analysis}
+
+This chapter introduces concepts from calculus and mathematical analysis.
+
+\section{Limits and Continuity}
+
+The concept of a limit is fundamental to calculus.
+
+\begin{definition}
+Let $f$ be a function defined on an open interval containing $a$ (except possibly at $a$ itself). We say that the \textbf{limit} of $f(x)$ as $x$ approaches $a$ is $L$, written
+\[
+\lim_{x \to a} f(x) = L,
+\]
+if for every $\epsilon > 0$, there exists a $\delta > 0$ such that whenever $0 < |x - a| < \delta$, we have $|f(x) - L| < \epsilon$.
+\end{definition}
+
+\begin{definition}
+A function $f$ is \textbf{continuous} at a point $a$ if
+\[
+\lim_{x \to a} f(x) = f(a).
+\]
+\end{definition}
+
+\section{Derivatives}
+
+The derivative measures the rate of change of a function.
+
+\begin{definition}
+The \textbf{derivative} of a function $f$ at a point $x$ is defined as
+\[
+f'(x) = \lim_{h \to 0} \frac{f(x + h) - f(x)}{h},
+\]
+provided this limit exists.
+\end{definition}
+
+\begin{theorem}[Chain Rule]
+If $g$ is differentiable at $x$ and $f$ is differentiable at $g(x)$, then the composite function $f \circ g$ is differentiable at $x$, and
+\[
+(f \circ g)'(x) = f'(g(x)) \cdot g'(x).
+\]
+\end{theorem}
+
+\section{Integration}
+
+Integration is the inverse operation to differentiation.
+
+\begin{definition}
+Let $f$ be a function on $[a, b]$. The \textbf{definite integral} of $f$ from $a$ to $b$ is denoted
+\[
+\int_a^b f(x) \, dx.
+\]
+\end{definition}
+
+\begin{theorem}[Fundamental Theorem of Calculus]
+If $f$ is continuous on $[a, b]$ and $F$ is an antiderivative of $f$ on $[a, b]$, then
+\[
+\int_a^b f(x) \, dx = F(b) - F(a).
+\]
+\end{theorem}
+
+\section{Exercises}
+
+\begin{enumerate}
+    \item Evaluate $\lim_{x \to 0} \frac{\sin x}{x}$.
+    \item Find the derivative of $f(x) = x^3 \sin(2x)$.
+    \item Compute $\int_0^1 x^2 e^x \, dx$ using integration by parts.
+\end{enumerate}
