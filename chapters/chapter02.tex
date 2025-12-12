@@ -1,0 +1,45 @@
+\chapter{Algebra and Number Theory}
+
+This chapter covers algebraic structures and number theory, building upon the foundation established in Chapter 1.
+
+\section{Groups and Rings}
+
+We introduce the concept of algebraic structures, starting with groups.
+
+\begin{definition}
+A \textbf{group} is a set $G$ together with a binary operation $\cdot$ that satisfies the following properties:
+\begin{enumerate}
+    \item \textbf{Closure:} For all $a, b \in G$, $a \cdot b \in G$.
+    \item \textbf{Associativity:} For all $a, b, c \in G$, $(a \cdot b) \cdot c = a \cdot (b \cdot c)$.
+    \item \textbf{Identity:} There exists an element $e \in G$ such that $a \cdot e = e \cdot a = a$ for all $a \in G$.
+    \item \textbf{Inverse:} For each $a \in G$, there exists an element $a^{-1} \in G$ such that $a \cdot a^{-1} = a^{-1} \cdot a = e$.
+\end{enumerate}
+\end{definition}
+
+\section{Prime Numbers}
+
+Prime numbers play a fundamental role in number theory.
+
+\begin{definition}
+A natural number $p > 1$ is called \textbf{prime} if its only positive divisors are 1 and $p$ itself.
+\end{definition}
+
+\begin{theorem}[Fundamental Theorem of Arithmetic]
+Every integer greater than 1 is either prime or can be uniquely represented as a product of prime numbers, up to the order of the factors.
+\end{theorem}
+
+\section{Modular Arithmetic}
+
+Modular arithmetic is a system of arithmetic for integers where numbers "wrap around" upon reaching a certain value (the modulus).
+
+\begin{definition}
+Let $n$ be a positive integer. Two integers $a$ and $b$ are said to be \textbf{congruent modulo $n$}, denoted $a \equiv b \pmod{n}$, if $n$ divides $a - b$.
+\end{definition}
+
+\section{Exercises}
+
+\begin{enumerate}
+    \item Verify that $(\mathbb{Z}, +)$ forms a group.
+    \item Find all prime numbers less than 50.
+    \item Compute $7^{100} \pmod{13}$.
+\end{enumerate}

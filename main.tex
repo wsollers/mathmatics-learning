@@ -1,0 +1,45 @@
+\documentclass[12pt,letterpaper]{book}
+
+% Essential packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[margin=1in]{geometry}
+
+% Theorem environments
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+% Document information (customize these fields)
+\title{Mathematics Learning} % TODO: Update with your book title
+\author{Your Name}           % TODO: Update with your name
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+% Include chapters
+\include{chapters/chapter01}
+\include{chapters/chapter02}
+\include{chapters/chapter03}
+
+% Bibliography
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
