@@ -3,28 +3,37 @@
 % Essential packages
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage[ttdefault=true]{AnonymousPro}
 \usepackage[english]{babel}
 \usepackage{amsmath, amsthm, amssymb}
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage[margin=1in]{geometry}
+\usepackage{amsfonts} % for "\mathbb" macro
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
 
 % Theorem environments
-\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{theorem}{Theorem}[subsection]
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{corollary}[theorem]{Corollary}
 
-\theoremstyle{definition}
-\newtheorem{definition}[theorem]{Definition}
+
+\newtheorem{definition}{Definition}[subsection]
+
+
 \newtheorem{example}[theorem]{Example}
 
 \theoremstyle{remark}
 \newtheorem{remark}[theorem]{Remark}
-
+\setlength{\parindent}{0pt}
 % Document information (customize these fields)
 \title{Mathematics Learning} % TODO: Update with your book title
-\author{Your Name}           % TODO: Update with your name
+\author{Wm. E. Sollers III}           % TODO: Update with your name
 \date{\today}
 
 \begin{document}
@@ -34,9 +43,12 @@
 \tableofcontents
 
 % Include chapters
-\include{chapters/chapter01}
-\include{chapters/chapter02}
-\include{chapters/chapter03}
+\include{chapters/Logic}
+\include{chapters/Set-Theory}
+\include{chapters/Algebra}
+\include{chapters/Plane-Geometry}
+\include{chapters/Trigonometry}
+\include{chapters/Limits}
 
 % Bibliography
 \bibliographystyle{plain}
